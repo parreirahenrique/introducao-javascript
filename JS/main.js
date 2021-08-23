@@ -48,5 +48,57 @@ for(counter = 0; counter <= 5; counter++){
 }
 
 var hoje = new Date();
-console.log(hoje.getMonth());
+console.log(hoje.getDate);
+
+// Criando funções dentro do JavaScript
+function somatorio(n1, n2){                      
+    return n1 + n2;
+}
+
+console.log(somatorio(2, 3));
+
+function validaIdade(idade){
+    var validar;
+    
+    if(idade >= 18){
+        validar = true;
+    }
+
+    else if(idade < 18){
+        validar = false;
+    }
+
+    return validar;
+}
+
+
+console.log(validaIdade(prompt("Qual sua idade?")));
 */
+
+function botao(){
+    document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar!</b>";
+
+    //alert("Obrigado por clicar!")
+}
+
+function redirecionar(){
+    window.open("https://digitalinnovation.one/");             // Redireciona para outra aba
+    //window.location.href = "https://digitalinnovation.one/"; // Redireciona para mesma aba
+}
+
+function trocar(){
+    //alert("Trocar texto.")
+    document.getElementById("trocatexto").innerHTML = "Obrigado por passar seu mouse!";
+}
+
+function voltar (){
+    document.getElementById("trocatexto").innerHTML = "Passe o mouse aqui";
+}
+
+function load(){
+    alert("Aguarde o carregamento da página")
+}
+
+function funcaoChange(elemento){
+    console.log(elemento.value)
+}
